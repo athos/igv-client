@@ -44,7 +44,7 @@
 
 (defn goto
   ([client locus]
-   (request :goto locus))
+   (request client :goto locus))
   ([client chr pos]
    (goto client (str (name chr) \: pos)))
   ([client chr start end]
