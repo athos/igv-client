@@ -2,9 +2,28 @@
 
 Clojure implementation of IGV client to control [IGV](http://software.broadinstitute.org/software/igv/) via its [Port Commands](http://software.broadinstitute.org/software/igv/automation#PORTCOMMANDS)
 
+## Installation
+
+Add the following to your `:dependencies`:
+
+```
+[igv-client "0.1.0"]
+```
+
 ## Usage
 
-FIXME
+```
+(require '[igv-client.core :as igv])
+
+(def client (igv/connect "127.0.0.1" 60151))
+(igv/set-snapshot-dir! client "/path/to/snapshot/dir")
+
+(igv/reset client)
+(igv/load-file client "/path/to/your/input/file")
+(igv/goto client "chr1" 123456)
+(igv/collapse client)
+(igv/snapshot client)
+```
 
 ## License
 
