@@ -36,23 +36,25 @@ Add the following to your `:dependencies`:
 
 Following is the list of commands available:
 
-| Command Name          | Function Signature                   |
-|-----------------------|--------------------------------------|
-| `version`             | `(version <client>)`                 |
-| `new`/`reset`/`clear` | `(reset <client>)`                   |
-| `load`/`loadfile`     | `(load-file <client>)`               |
-| `genome`              | `(genome <client> <genome>)`         |
-| `goto`                | `(goto <client> <locus>)`            |
-|                       | `(goto <client> <chr> <pos>)`        |
-| `gototrack`           | `(goto-track <client> <track>)`      |
-| `snapshotdirectory`   | `(set-snapshot-dir! <client> <dir>)` |
-| `snapshot`            | `(snapshot <client>)`                |
-| `zoomin`              | `(zoom-in <client>)`                 |
-| `zoomout`             | `(zoom-out <client>)`                |
-| `collapse`            | `(collapse <client> [<track>])`      |
-| `expand`              | `(expand <client> [<track>])`        |
-| `squish`              | `(squish <client> [<track>])`        |
-| `tofront`             | `(bring-to-front! <client>)`         |
+| Command Name          | Function Signature                      |
+|-----------------------|-----------------------------------------|
+| `version`             | `(version <client>)`                    |
+| `new`/`reset`/`clear` | `(reset <client>)`                      |
+| `load`/`loadfile`     | `(load-file <client>)`                  |
+| `remove`              | `(remove <client> <track>)`             |
+| `genome`              | `(genome <client> <genome>)`            |
+| `goto`                | `(goto <client> <locus>)`               |
+|                       | `(goto <client> <chr> <pos>)`           |
+| `gototrack`           | `(goto-track <client> <track>)`         |
+| `setsleepinterval`    | `(set-sleep-interval! <client> <msec>)` |
+| `snapshotdirectory`   | `(set-snapshot-dir! <client> <dir>)`    |
+| `snapshot`            | `(snapshot <client>)`                   |
+| `zoomin`              | `(zoom-in <client>)`                    |
+| `zoomout`             | `(zoom-out <client>)`                   |
+| `collapse`            | `(collapse <client> [<track>])`         |
+| `expand`              | `(expand <client> [<track>])`           |
+| `squish`              | `(squish <client> [<track>])`           |
+| `tofront`             | `(bring-to-front! <client>)`            |
 
 ## License
 

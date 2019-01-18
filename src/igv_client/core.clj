@@ -40,6 +40,9 @@
 (defn load-file [client file]
   (request client :loadfile file))
 
+(defn remove [client track]
+  (request client :remove track))
+
 (defn genome [client genome]
   (request client :genome (name genome)))
 
@@ -53,6 +56,9 @@
 
 (defn goto-track [client track]
   (request client :gototrack track))
+
+(defn set-sleep-interval! [client msec]
+  (request client :setsleepinterval msec))
 
 (defn set-snapshot-dir! [client dir]
   (request client :snapshotdirectory dir))
