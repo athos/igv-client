@@ -12,7 +12,7 @@ Add the following to your `:dependencies`:
 
 ## Usage
 
-```
+```clojure
 (require '[igv-client.core :as igv])
 
 (def client (igv/connect "127.0.0.1" 60151))
@@ -24,6 +24,26 @@ Add the following to your `:dependencies`:
 (igv/collapse client)
 (igv/snapshot client)
 ```
+
+Following is the list of commands available:
+
+| Command Name          | Function Signature                   |
+|-----------------------|--------------------------------------|
+| `version`             | `(version <client>)`                 |
+| `new`/`reset`/`clear` | `(reset <client>)`                   |
+| `load`/`loadfile`     | `(load-file <client>)`               |
+| `genome`              | `(genome <client> <genome>)`         |
+| `goto`                | `(goto <client> <locus>)`            |
+|                       | `(goto <client> <chr> <pos>)`        |
+| `gototrack`           | `(goto-track <client> <track>)`      |
+| `snapshotdirectory`   | `(set-snapshot-dir! <client> <dir>)` |
+| `snapshot`            | `(snapshot <client>)`                |
+| `zoomin`              | `(zoom-in <client>)`                 |
+| `zoomout`             | `(zoom-out <client>)`                |
+| `collapse`            | `(collapse <client> [<track>])`      |
+| `expand`              | `(expand <client> [<track>])`        |
+| `squish`              | `(squish <client> [<track>])`        |
+| `tofront`             | `(bring-to-front! <client>)`         |
 
 ## License
 
