@@ -31,7 +31,8 @@
   (apply send client cmd args)
   (let [resp (recv client)]
     (when-not (= resp "OK")
-      (throw (ex-info resp {:command (vec (cons cmd args))})))))
+      (throw (ex-info resp {:command (vec (cons cmd args))}))))
+  client)
 
 (defn reset [client]
   (request client :reset))
