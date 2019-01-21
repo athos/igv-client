@@ -42,7 +42,7 @@ Following is the list of commands available:
 |-----------------------|-----------------------------------------|
 | `version`             | `(version <client>)`                    |
 | `new`/`reset`/`clear` | `(reset <client>)`                      |
-| `load`/`loadfile`     | `(load-file <client>)`                  |
+| `load`/`loadfile`     | `(load-file <client> <path>)`           |
 | `remove`              | `(remove <client> <track>)`             |
 | `genome`              | `(genome <client> <genome>)`            |
 | `goto`                | `(goto <client> <locus>)`               |
