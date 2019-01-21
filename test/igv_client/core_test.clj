@@ -37,6 +37,7 @@
                         (= "OK" @(:result c)))
     (igv/reset) "reset"
     (igv/load-file "/path/to/file") "loadfile /path/to/file"
+    (igv/load-file (io/file "/path/to/file")) "loadfile /path/to/file"
     (igv/remove "track1") "remove track1"
     (igv/genome "genome") "genome genome"
     (igv/goto "chr1:123456") "goto chr1:123456"
@@ -45,6 +46,7 @@
     (igv/goto-track "track1") "gototrack track1"
     (igv/set-sleep-interval! 1000) "setsleepinterval 1000"
     (igv/set-snapshot-dir! "/path/to/dir") "snapshotdirectory /path/to/dir"
+    (igv/set-snapshot-dir! (io/file "/path/to/dir")) "snapshotdirectory /path/to/dir"
     (igv/snapshot) "snapshot"
     (igv/zoom-in) "zoomin"
     (igv/zoom-out) "zoomout"

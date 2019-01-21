@@ -34,17 +34,20 @@
       (throw (ex-info resp {:command (vec (cons cmd args))}))))
   client)
 
+(defn- ->path [x]
+  (.getPath (io/as-file x)))
+
 (defn reset [client]
   (request client :reset))
 
 (defn load-file [client file]
-  (request client :loadfile file))
+  (request client :loadfile (->path file)))
 
 (defn remove [client track]
   (request client :remove track))
 
 (defn genome [client genome]
-  (request client :genome (name genome)))
+  (request client :genome genome))
 
 (defn goto
   ([client locus]
@@ -61,7 +64,7 @@
   (request client :setsleepinterval msec))
 
 (defn set-snapshot-dir! [client dir]
-  (request client :snapshotdirectory dir))
+  (request client :snapshotdirectory (->path dir)))
 
 (defn snapshot [client]
   (request client :snapshot))
