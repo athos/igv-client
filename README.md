@@ -23,6 +23,7 @@ Add the following to your `:dependencies`:
 (igv/goto client "chr1" 123456)
 (igv/collapse client)
 (igv/snapshot client)
+(.close client)
 
 ;; or you can also write the same thing with the threading macro:
 
@@ -31,7 +32,8 @@ Add the following to your `:dependencies`:
     (igv/load-file "/path/to/your/input/file")
     (igv/goto "chr1" 123456)
     igv/collapse
-    igv/snapshot)
+    igv/snapshot
+    .close)
 ```
 
 Following is the list of commands available:
