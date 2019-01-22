@@ -1,4 +1,5 @@
 # igv-client
+[![Clojars Project](https://img.shields.io/clojars/v/igv-client.svg)](https://clojars.org/igv-client)
 [![CircleCI](https://circleci.com/gh/athos/igv-client.svg?style=shield)](https://circleci.com/gh/athos/igv-client)
 
 Clojure implementation of IGV client to control [IGV](http://software.broadinstitute.org/software/igv/) via its [Port Commands](http://software.broadinstitute.org/software/igv/automation#PORTCOMMANDS)
@@ -7,9 +8,7 @@ Clojure implementation of IGV client to control [IGV](http://software.broadinsti
 
 Add the following to your `:dependencies`:
 
-```
-[igv-client "0.1.0"]
-```
+[![Clojars Project](https://clojars.org/igv-client/latest-version.svg)](https://clojars.org/igv-client)
 
 ## Usage
 
