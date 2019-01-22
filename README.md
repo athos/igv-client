@@ -1,4 +1,5 @@
 # igv-client
+[![CircleCI](https://circleci.com/gh/athos/igv-client.svg?style=shield)](https://circleci.com/gh/athos/igv-client)
 
 Clojure implementation of IGV client to control [IGV](http://software.broadinstitute.org/software/igv/) via its [Port Commands](http://software.broadinstitute.org/software/igv/automation#PORTCOMMANDS)
 
