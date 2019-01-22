@@ -36,6 +36,8 @@ Add the following to your `:dependencies`:
     .close)
 ```
 
+## Available Commands
+
 Following is the list of commands available:
 
 | Command Name          | Function Signature                      |
