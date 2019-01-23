@@ -4,12 +4,12 @@
   (:import [java.io Closeable]
            [java.net Socket]))
 
-(defrecord IGVClient [socket in out]
+(defrecord IGVClient [^Socket socket in out]
   Closeable
   (close [this]
     (.close socket)))
 
-(defn ^IGVClient connect [host port]
+(defn ^IGVClient connect [^String host ^long port]
   (let [socket (Socket. host port)
         out (io/writer (.getOutputStream socket))
         in (io/reader (.getInputStream socket))]
